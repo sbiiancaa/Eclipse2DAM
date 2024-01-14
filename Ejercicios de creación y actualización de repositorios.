@@ -1,3 +1,4 @@
+
 git config --global user.name "firstname lastname"
 git config --global user.email "valid-email"
 git config --global color.ui auto
@@ -7,4 +8,37 @@ git config --global --list
 
 mkdir libro
 cd libro
-git init
+git init LIBRO
+echo "Este es el contenido del libro." > contenido.txt
+git commit -m "Añadir contenido inicial del libro"
+ls
+
+
+git status
+echo "Capítulo 1: Introducción a Git" > indice.txt
+echo "Capítulo 2: Flujo de trabajo básico" >> indice.txt
+echo "Capítulo 3: Repositorios remotos" >> indice.txt
+git status
+git add indice.txt
+git status
+
+
+git commit -m "Añadido índice del libro."
+git status
+
+
+
+echo "Capítulo 1: Introducción a Git" > indice.txt
+echo "Capítulo 2: Flujo de trabajo básico" >> indice.txt
+echo "Capítulo 3: Gestión de ramas" >> indice.txt
+echo "Capítulo 4: Repositorios remotos" >> indice.txt
+git diff
+git add indice.txt
+git commit -m "Añadido capítulo 3 sobre gestión de ramas"
+
+
+
+git log -p -1
+git commit --amend
+git log -p -1
+
