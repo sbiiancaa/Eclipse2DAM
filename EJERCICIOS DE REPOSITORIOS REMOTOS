@@ -1,17 +1,1 @@
-git remote add github url
-git remote -v
 
-git push github master
-
-git clone url
-cat > autores.txt
-Nombre del autor y su correo.
-git add
-git commit -m "Añadido autor."
-git push origin master
-
-
-git clone url
-git checkout -b autoria
-git commit -am "Añadido nuevo autor."
-git push origin autoria
