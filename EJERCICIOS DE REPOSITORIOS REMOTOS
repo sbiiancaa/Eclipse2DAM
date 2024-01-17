@@ -6,9 +6,9 @@ git push github master
 git clone url
 cat > autores.txt
 Nombre del autor y su correo.
-git add .
+git add
 git commit -m "Añadido autor."
-git push origin master.
+git push origin master
 
 
 git clone url
