@@ -1,0 +1,22 @@
+git remote add libro-git1 https://github.com/sbiiancaa/libro-git1.git
+git remote -v
+ 
+Ejercicio 2:
+git push  https://github.com/sbiiancaa/libro-git1.git master
+ 
+Ejercicio 3:
+git clone https://github.com/Yaneisi1999/libro-git.git
+echo autores.txt
+Yaneisi Israel  yaneisi1999a@gmail.com
+git add 
+git commit -m "Añadido autor."
+git push origin master
+ 
+
+git clone https://github.com/sbiiancaa/libro-git1.git
+git checkout -b autoria
+echo autores.txt
+bianca segovia sbiiancaa@gmail.com
+git add 
+git commit -m "Añadido nuevo autor."
+git push origin autoria
