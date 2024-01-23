@@ -1,45 +1,48 @@
-nano indice.txt
+notepad indice.txt
 Eliminar la última línea y guardar el fichero.
 git status
 git checkout -- indice.txt
 git status
 
 
-nano indice.txt
+notepad indice.txt
 Eliminar la última línea y guardar el fichero.
-git add 
+git add indice.txt
 git status
-git reset indice.txt
+git restore –staged indice.txt
 git status
 git checkout -- indice.txt
 git status
 
 
-nano indice.txt
+notepadindice.txt
 Eliminar la última línea y guardar el fichero.
-rm capitulos/capitulo3.txt
-touch capitulos/capitulo4.txt
-git add 
+
+del capitulos/capitulo3.txt   rm capitulos/capitulo3.txt
+echo > capitulos/capitulo4.txt
+git add indice.txt capitulos/capitulo4.txt
 git status
-git reset
+git restore –staged indice.txt capitulos/capitulo4.txt
 git status
-git checkout -- .
+git checkout -- indice.txt
 git status
 git clean -f
 git status
 
 
-nano indice.txt
+notepad indice.txt
 Eliminar la última línea y guardar el fichero.
-rm capitulos/capitulo3.txt
+del capitulos/capitulo3.txt   rm capitulos/capitulo3.txt
+git add indice.txt capitulos/capitulo4.txt
 git commit -a "Borrado accidental."
 git status
 git log
 git reset --soft HEAD~1
 git status
-git commit -m "Borrado accidental."
-git status
-git log
-git reset --hard HEAD~1
-git log
-git status
+> git commit -m "Borrado accidental."
+> git status
+> git log
+> git reset --hard HEAD~1
+> git log
+> git status
+
